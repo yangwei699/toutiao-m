@@ -42,3 +42,14 @@ module.exports = {
     }
   }
 }
+// module.exports = {//自适应配置内置的属性样式无法适配其他都是可以的
+//   plugins: {
+//     'autoprefixer': {
+//       browsers: ['Android >= 4.0', 'iOS >= 8']
+//     },
+//     'postcss-pxtorem': {
+//       rootValue: 37.5,
+//       propList: ['*']
+//     }
+//   }
+// }

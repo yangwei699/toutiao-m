@@ -1,0 +1,22 @@
+使用了vnat2 开发 用到的组件
+form 表单
+
+Tabbar 标签栏
+
+Field 输入框
+Icon 图标
+Field 输入框
+=====================
+Toast 轻提示
+
+Toast.loading({
+  message: '加载中...',
+  forbidClick: true,
+});
+在组件中必须通过this.$toast 来调用 Tost 组件 如下
+   this.$toast.loading({
+        message: '加载中...',
+        forbidClick: true // 禁用背景点击
+      })
+===================================
+CountDown 倒计时

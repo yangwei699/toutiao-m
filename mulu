@@ -1,0 +1,20 @@
+移动端 REM 适配
+这两个工具配置到项目中完成 REM 适配
+
+1、安装
+
+```shell
+# yarn add amfe-flexible
+npm i amfe-flexible
+```
+
+2、然后在 `main.js` 中加载执行该模块
+
+```javascript
+import 'amfe-flexible'
+```
+
+```shell
+# yarn add -D postcss-pxtorem
+# -D 是 --save-dev 的简写
+npm install postcss-pxtorem -D

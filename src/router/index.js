@@ -8,6 +8,7 @@ const routes = [
   {
     path: '/login',
     name: 'login',
+    /* 如果加载的是index 可以删略 下面的就是懒加载 */
     component: () => import('@/views/login')
   }
 ]
