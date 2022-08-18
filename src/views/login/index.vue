@@ -1,7 +1,9 @@
 <template>
    <div class="login-container">
     <!-- 导航栏 -->
-    <van-nav-bar class="page-nav-bar" title="登录"/>
+    <van-nav-bar class="page-nav-bar" title="登录">
+      <van-icon slot="left" name="cross" @click="$router.back()"/>
+    </van-nav-bar>
     <!--/导航栏 -->
     <!--登录表单-->
     <!--
@@ -19,6 +21,7 @@
         placeholder="请输入手机号"
         :rules="userFormRules.mobile"
         type="number"
+        maxlength="11"
       >
        <i slot="left-icon" class="toutiao toutiao-shouji"></i>
       </van-field>
@@ -93,6 +96,10 @@ export default {
         // console.log(res)
         this.$store.commit('setUser', data.data)
         this.$toast.success('登录成功')// 会自动关闭上面的表单验证
+
+        // 登录成功,跳转到原来的页面
+        // back 的方式不严谨,功能优化会更好
+        this.$router.back()
       } catch (err) {
         if (err.response.status === 400) {
           this.$toast.fail('手机号或验证码错误')

@@ -20,3 +20,19 @@ Toast.loading({
       })
 ===================================
 CountDown 倒计时
+
+首页界面 
+Tabbar
+我的页面
+Image
+
+Grid 宫格
+Dialog 弹出框
+
+=======================
+### 处理相对时间
+
+推荐两个第三方库：
+
+- [Moment.js](https://momentjs.com/)
+- [Day.js](https://day.js.org/)
